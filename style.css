@@ -1,0 +1,499 @@
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#home {
+    background: url('background.jpg') center/cover no-repeat;
+}
+
+img{
+     height: 400px;
+     width: 270px;
+}
+
+h2 {
+    color: #333;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+.social-icons i{
+    color: #538DD7;
+    vertical-align: middle;
+    padding: 2px;
+    
+}
+.social-icons a{
+    text-decoration: none; /* Removes underline */
+    border: none; /* Removes any borders */
+}
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-headings {
+    height: 50px; /* Adjusted height to fit within your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.inner-headings {
+    border: 0; /* Removed border */
+    height: 50px; /* Ensure it aligns with the outer height */
+    line-height: 50px; /* Center text vertically */
+    font-size: 45px;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.inner-headings span {
+    position: relative;
+    color: crimson; /* Text color */
+    animation: animation 10s ease infinite; /* Animation timing */
+}
+
+@keyframes animation {
+    0%, 100% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -50px; /* Adjust this value based on line height */
+    }
+    45% {
+        top: -50px;
+    }
+    50% {
+        top: -100px; /* Adjust this value based on line height */
+    }
+    70% {
+        top: -100px;
+    }
+    75% {
+        top: -150px; /* Adjust this value based on line height */
+    }
+    95% {
+        top: -150px;
+    }
+}
+.social-icons i{
+    font-size: x-large;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ /* Skills Section Title */
+.skill-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Progress bar styling */
+.progress {
+    height: 20px;
+    border-radius: 5px;
+}
+.progress-bar {
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+#achievements {
+    background-color: #f3f4f6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#achievements h2 {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card i {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 15px;
+}
+
+.achievement-card .num {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 8px;
+}
+
+.achievement-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .achievements-container {
+        gap: 20px;
+    }
+
+    .achievement-card {
+        width: 160px;
+        padding: 20px;
+    }
+
+    .achievement-card .num {
+        font-size: 2.3rem;
+    }
+}
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Project card image styling */
+.project-card img {
+    width: 100%;           /* Full width within the card */
+    height: 200px;         /* Set height to a consistent value */
+    object-fit: cover;     /* Crop to fit the container while preserving aspect ratio */
+    border-radius: 5px;    /* Optional: Rounded corners */
+}
+
+/* Card container styling */
+.project-card {
+    border-radius: 10px;    /* Optional: Rounded card corners */
+    overflow: hidden;       /* Prevent image overflow on rounded corners */
+}
+
+/* Card layout styling */
+#project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;              /* Space between cards */
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive columns */
+    max-width: 33.333%;
+    margin-bottom: 20px;
+}
+#contact h2 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+#contact p {
+    animation: fadeIn 1.5s ease-in-out;
+}
+#contactForm .form-control {
+    transition: box-shadow 0.3s;
+}
+#contactForm .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-color: #333;
+}
+#contactForm button:hover {
+    background-color: #555;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.fade-in {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly move down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition for smooth effect */
+}
+
+.fade-in.is-visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move back to original position */
+}
+
+
+
+/* General animation settings for sections */
+.animate-section {
+    opacity: 0; /* Hidden by default */
+    animation: fadeIn 1s ease forwards; /* 'forwards' keeps the final state */
+}
+
+/* Individual delays for each element */
+h1.display-4 {
+    animation-delay: 0.5s; /* Delay for main heading */
+}
+
+.outer-headings {
+    animation-delay: 1s; /* Delay for rotating text */
+}
+
+.social-icons {
+    animation-delay: 1.5s; /* Delay for social icons */
+}
+
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General animation settings for sections */
+.animate-section {
+    opacity: 0; /* Hidden by default */
+    animation: fadeIn 1s ease forwards; /* 'forwards' keeps the final state */
+}
+
+/* Individual delays for each element */
+img {
+    animation-delay: 0.5s; /* Delay for image */
+}
+
+h2 {
+    animation-delay: 1s; /* Delay for heading */
+}
+
+p {
+    animation-delay: 1.5s; /* Delay for paragraphs */
+}
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General animation settings for skills */
+.animate-skill {
+    opacity: 0; /* Hidden by default */
+    animation: fadeIn 0.8s ease forwards; /* 'forwards' keeps the final state */
+}
+
+/* Individual delays for each element */
+h2 {
+    animation-delay: 0.5s; /* Delay for heading */
+}
+
+.skill-title {
+    animation-delay: 1s; /* Delay for skill titles */
+}
+
+.progress-bar {
+    animation-delay: 1.5s; /* Delay for progress bars */
+}
+
+/* Specific delays for each skill item (optional for staggered effect) */
+.skill-title:nth-child(1),
+.progress-bar:nth-child(1) {
+    animation-delay: 1s; /* JavaScript */
+}
+.skill-title:nth-child(2),
+.progress-bar:nth-child(2) {
+    animation-delay: 1.2s; /* React */
+}
+.skill-title:nth-child(3),
+.progress-bar:nth-child(3) {
+    animation-delay: 1.4s; /* Angular */
+}
+.skill-title:nth-child(4),
+.progress-bar:nth-child(4) {
+    animation-delay: 1.6s; /* Node.js */
+}
+.skill-title:nth-child(5),
+.progress-bar:nth-child(5) {
+    animation-delay: 1.8s; /* HTML & CSS */
+}
+.skill-title:nth-child(6),
+.progress-bar:nth-child(6) {
+    animation-delay: 2s; /* Bootstrap */
+}
+.skill-title:nth-child(7),
+.progress-bar:nth-child(7) {
+    animation-delay: 2.2s; /* SQL */
+}
+.skill-title:nth-child(8),
+.progress-bar:nth-child(8) {
+    animation-delay: 2.4s; /* MongoDB */
+}
+.skill-title:nth-child(9),
+.progress-bar:nth-child(9) {
+    animation-delay: 2.6s; /* Express */
+}
+.skill-title:nth-child(10),
+.progress-bar:nth-child(10) {
+    animation-delay: 2.8s; /* Java */
+}
+.skill-title:nth-child(11),
+.progress-bar:nth-child(11) {
+    animation-delay: 3s; /* Python */
+}
+.skill-title:nth-child(12),
+.progress-bar:nth-child(12) {
+    animation-delay: 3.2s; /* Linux */
+}
+.skill-title:nth-child(13),
+.progress-bar:nth-child(13) {
+    animation-delay: 3.4s; /* DevOps */
+}
+
+
+
+#achievements {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.num {
+    font-size: 3rem; /* Large font for numbers */
+    font-weight: bold;
+    color: #007bff; /* Change this to your preferred color */
+    margin: 0;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to cards */
+.achievement-card {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s forwards; /* Animation */
+}
+
+.achievement-card:nth-child(1) {
+    animation-delay: 0.2s; /* Delay for first card */
+}
+.achievement-card:nth-child(2) {
+    animation-delay: 0.4s; /* Delay for second card */
+}
+.achievement-card:nth-child(3) {
+    animation-delay: 0.6s; /* Delay for third card */
+}
+
+
+ 
